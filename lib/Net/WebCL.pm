@@ -5,7 +5,7 @@ use HTTP::Request::Common qw/GET POST/;
 use HTTP::Cookies;
 use base qw/LWP::UserAgent/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new{
 	my $this = shift;
@@ -77,16 +77,16 @@ Proxy is supported.
  );
  print $res->content;
 
-method: GET/POST
-url: Example is 'http://search.cpan.org'
-send_data: This parameter is Hash Ref.
-  my $proxy_data = {
-    proxy_type => [qw/http https/],
-    proxy_host => 'proxy.hogehoge.localdomain',
-    proxy_port => 8080,
-    proxy_user => 'foo',
-    proxy_password => 'bar'
-  );
+ method: GET/POST
+ url: Example is 'http://search.cpan.org'
+ send_data: This parameter is Hash Ref.
+   my $proxy_data = {
+     proxy_type => [qw/http https/],
+     proxy_host => 'proxy.hogehoge.localdomain',
+     proxy_port => 8080,
+     proxy_user => 'foo',
+     proxy_password => 'bar'
+   );
 
 =head1 Copyright
 
