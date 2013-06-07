@@ -5,7 +5,7 @@ use HTTP::Request::Common qw/GET POST/;
 use HTTP::Cookies;
 use base qw/LWP::UserAgent/;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new{
 	my $this = shift;

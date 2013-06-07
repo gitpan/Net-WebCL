@@ -4,3 +4,6 @@ Revision history for Perl extension Net::WebCL.
 	- original version; created by h2xs 1.23 with options
 		-X -A Net::WebCL
 
+0.03  Fri Jun 07 10:13:00 2013
+      Fixed several bugs.
+
